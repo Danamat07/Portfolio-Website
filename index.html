@@ -27,8 +27,6 @@
         <a href="#contact">Contact</a>
       </nav>
 
-      <button class="gradient-btn">Contact Me</button>
-
     </header>
 
     <section class="home" id="home">
@@ -40,14 +38,11 @@
         <p>I believe that great software is built through continuous learning and hands-on experience. I’m constantly working on projects that challenge me to grow as a developer, from web development to algorithms and backend engineering.</p>
 
         <div class="social-icons">
-          <a href="#">
+          <a href="https://github.com/Danamat07" target="_blank">
             <i class="bx bxl-github"></i>
           </a>
-          <a href="#">
+          <a href="https://www.linkedin.com/in/dana-maria-matei-b17282310/" target="_blank">
             <i class="bx bxl-linkedin"></i>
-          </a>
-          <a href="#">
-            <i class="bx bxl-instagram-alt"></i>
           </a>
         </div>
 
@@ -132,27 +127,25 @@
     <section class="contact" id="contact">
       <h2 class="heading">Contact <span>Me</span></h2>
       
-      <form action="#">
-
+      <form id="contact-form" action="https://formspree.io/f/mblgkyde" method="POST">
         <div class="input-group-1">
-
-          <div class="input-box">
-            <input type="text" placeholder="Full Name">
-            <input type="email" placeholder="Email">
-          </div>
-
-          <div class="input-box">
-            <input type="number" placeholder="Phone Number">
-            <input type="text" placeholder="Subject">
-          </div>
+            <div class="input-box">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="input-box">
+                <input type="number" name="phone" placeholder="Phone Number" required>
+                <input type="text" name="subject" placeholder="Subject" required>
+            </div>
         </div>
-
         <div class="input-group-2">
-          <textarea name="" id="" placeholder="Your Message" cols="30" rows="10"></textarea>
-          <input type="submit" value="Send Message" class="btn">
+            <textarea name="message" placeholder="Your Message" cols="30" rows="10" required></textarea>
+            <input type="submit" value="Send Message" class="btn">
         </div>
-
-      </form>
+    </form>
+    
+    <script src="script.js"></script>
+    
     </section>
 
     <footer class="footer">
@@ -162,9 +155,6 @@
         </a>
         <a href="#">
           <i class="bx bxl-linkedin"></i>
-        </a>
-        <a href="#">
-          <i class="bx bxl-instagram-alt"></i>
         </a>
       </div>
 
